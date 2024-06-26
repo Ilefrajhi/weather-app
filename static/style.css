@@ -9,7 +9,7 @@
 .city-card {
   width: 200px; /* Set width of each city card */
   margin: 0 10px; /* Optional: Adjust margin between cards */
-  border: 1px solid #ccc; /* Optional: Add border for styling */
+  border: 1px solid #140652; /* Optional: Add border for styling */
   border-radius: 5px; /* Optional: Add border radius for rounded corners */
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
 }

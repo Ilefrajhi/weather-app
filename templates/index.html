@@ -8,15 +8,16 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container-button" style="text-align: center;">
+    <div class="container-button" style="text-align: center; background-image: url('{{ url_for('static', filename='images/200000203-photos-of-sky-during-different-weather-collage.jpg') }}');">
         <h1 style="font-size: 28px; color: #333; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); margin-bottom: 20px;">Weather App</h1>
-         <p>See the weather with just one click!</p>
+        <p>See the weather in your place with just one click!</p>
         <form id="weatherForm" onsubmit="return false;" style="display: inline-block;">
             <input type="text" id="cityInput" placeholder="Enter city name" style="padding: 12px; width: 250px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
-            <button type="submit" id="getWeatherBtn" style="padding: 12px 24px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: 10px;">Get Weather</button>
+            <button type="submit" id="getWeatherBtn" style="padding: 12px 24px; background-color: #0d409e; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: 10px;">Get Weather</button>
         </form>
-        <div id="weatherInfo" style="margin-top: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f0f0f0; text-align: left; font-size: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+        <div id="weatherInfo" style="margin-top: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f0f0f0; text-align: left; font-size: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; align-items: center;"></div>
     </div>
+    
     
     
 
