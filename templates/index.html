@@ -4,15 +4,54 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Weather App</title>
+  <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <div class="container">
-    <h1>Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name">
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weatherInfo"></div>
-  </div>
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <div class="container-button" style="text-align: center;">
+        <h1 style="font-size: 28px; color: #333; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); margin-bottom: 20px;">Weather App</h1>
+         <p>See the weather with just one click!</p>
+        <form id="weatherForm" onsubmit="return false;" style="display: inline-block;">
+            <input type="text" id="cityInput" placeholder="Enter city name" style="padding: 12px; width: 250px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px;">
+            <button type="submit" id="getWeatherBtn" style="padding: 12px 24px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; margin-left: 10px;">Get Weather</button>
+        </form>
+        <div id="weatherInfo" style="margin-top: 20px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f0f0f0; text-align: left; font-size: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);"></div>
+    </div>
+    
+    
+
+    <div class="container" id="citiesContainer">
+        <div class="city-card" id="tunisiaCard">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Tunisia</h2>
+                    <div id="tunisiaInfo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="city-card" id="bizerteCard">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Bizerte</h2>
+                    <div id="bizerteInfo"></div>
+                </div>
+            </div>
+        </div>
+        <div class="city-card" id="bejaCard">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Beja</h2>
+                    <div id="bejaInfo"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer style="background-color: #f8f9fa; text-align: center; padding: 10px; margin-top: 20px;">
+        <a href="https://github.com/Ilefrajhi" style="text-decoration: none; color: #212529; margin: 0 10px;"><i class="fa fa-github" style="font-size: 24px;"></i></a>
+        <a href="https://www.linkedin.com/in/ilef-rajhi-836669262/" style="text-decoration: none; color: #212529; margin: 0 10px;"><i class="fa fa-linkedin" style="font-size: 24px;"></i></a>
+    </footer>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
