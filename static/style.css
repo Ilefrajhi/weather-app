@@ -1,6 +1,5 @@
 /* Custom CSS for city cards */
-
-.container {
+.container-card {
   display: flex; /* Use flexbox for horizontal alignment */
   justify-content: space-around; /* Distribute items evenly with space around them */
   margin-top: 20px; /* Optional: Adjust margin as needed */
@@ -25,4 +24,94 @@
 
 .card-title {
   margin-bottom: 10px; /* Optional: Adjust margin below card title */
+}
+
+body {
+  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff); /* Deep blue to light blue gradient */
+
+
+  font-family: Arial, sans-serif;
+  color: #0e0d0d;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.container button:hover {
+  background-color: #0b2a67;
+}
+
+.container button {
+  padding: 12px 24px;
+  background-color: #0d409e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.container input[type="text"] {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 100%; /* Optional: Adjust maximum width as needed */
+  margin: 20px auto; /* Auto margins horizontally center the container */
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.my-container-1 {
+  border: #ffffff;
+}
+
+.my-container-2 {
+  border: #ffffff;
+}
+
+#locationOutput {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: #ffffff;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
+}
+
+#weatherInfo {
+  margin-left: 20px;
+  margin-right: 20px;
+  border: #ffffff;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  text-align: center;
 }

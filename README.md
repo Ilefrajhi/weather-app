@@ -7,7 +7,7 @@ Welcome to my Flask Weather App project.
 
 A simple web application to display the current weather in various cities, built with Python, Flask and an API key from openweather. 
 
-![Example Image](/static/images/image.png)
+![alt text](<static/images/image copy.png>)
 
 ## Installation and Setup Instructions
 Clone this repository. You will need python3, Flask and a free API key from openweather.
@@ -23,3 +23,17 @@ pip install requests
 python3 app.py
 
 
+Web browsers provide a geolocation API that allows web apps to access the user's location data, which i actually used to determine the user's loacation.
+
+# See the weather where you are with me !
+![alt text](image-2.png)
+
+# make some search !
+
+![alt text](image-3.png)
+
+# most commonly searched places !
+
+![alt text](<static/images/image copy 4.png>)
+
+## ALL IN JUST ONE CLICK !
