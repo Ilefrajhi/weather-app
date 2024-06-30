@@ -28,7 +28,7 @@ Web browsers provide a geolocation API that allows web apps to access the user's
 # See the weather where you are with me !
 ![alt text](image-2.png)
 
-# make some search !
+# make some searchs !
 
 ![alt text](image-3.png)
 

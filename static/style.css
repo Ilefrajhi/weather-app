@@ -1,117 +1,169 @@
-/* Custom CSS for city cards */
-.container-card {
-  display: flex; /* Use flexbox for horizontal alignment */
-  justify-content: space-around; /* Distribute items evenly with space around them */
-  margin-top: 20px; /* Optional: Adjust margin as needed */
-}
-
-.city-card {
-  width: 200px; /* Set width of each city card */
-  margin: 0 10px; /* Optional: Adjust margin between cards */
-  border: 1px solid #140652; /* Optional: Add border for styling */
-  border-radius: 5px; /* Optional: Add border radius for rounded corners */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow for depth */
-}
-
-.city-card .card-body {
-  padding: 10px; /* Optional: Adjust padding within each card */
-  text-align: center; /* Center text within the card */
-}
-
-.city-card h2 {
-  margin-bottom: 0.5rem; /* Optional: Adjust margin below the heading */
-}
-
-.card-title {
-  margin-bottom: 10px; /* Optional: Adjust margin below card title */
-}
-
 body {
-  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff); /* Deep blue to light blue gradient */
-
-
-  font-family: Arial, sans-serif;
-  color: #0e0d0d;
+  font-family: 'Open Sans', sans-serif;
   margin: 0;
   padding: 0;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  align-items: center;
-}
-
-.container button:hover {
-  background-color: #0b2a67;
-}
-
-.container button {
-  padding: 12px 24px;
-  background-color: #0d409e;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  margin-left: 10px;
-}
-
-.container input[type="text"] {
-  padding: 12px;
-  width: 250px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.container {
-  max-width: 100%; /* Optional: Adjust maximum width as needed */
-  margin: 20px auto; /* Auto margins horizontally center the container */
-  padding: 20px;
-  border-radius: 8px;
-  font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center;
+  background-color: #f0f0f0;
 }
 
 header {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 28px;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+header p {
+  margin: 5px 0;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.my-container-1,
+.my-container-2 {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.container-card {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.city-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin: 10px 0;
 }
 
-
-.my-container-1 {
-  border: #ffffff;
+.weather-icon i {
+  font-size: 50px;
+  color: #ffdd00;
 }
 
-.my-container-2 {
-  border: #ffffff;
-}
-
-#locationOutput {
-  margin-left: 20px;
-  margin-right: 20px;
-  border: #ffffff;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 20px;
+footer {
+  background-color: #f8f9fa;
   text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#weatherInfo {
-  margin-left: 20px;
-  margin-right: 20px;
-  border: #ffffff;
-  border-radius: 10px;
-  background-color: #ffffff;
-  color: #000000;
-  font-size: 20px;
-  text-align: center;
+footer a {
+  text-decoration: none;
+  color: #212529;
+  margin: 0 10px;
+}
+
+footer a i {
+  font-size: 24px;
+}
+
+.on-left {
+  float: left; /* Aligns to the left */
+  width: 50%; /* Adjust as needed */
+}
+
+.on-right {
+  float: right; /* Aligns to the right */
+  width: 50%; /* Adjust as needed */
+}
+
+.date-time {
+  text-align: left; /* Aligns day and date to the left */
+}
+
+.current-time {
+  text-align: right; /* Aligns time to the right */
+}
+
+.class-fa {
+  left : 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  
+}
+
+.class-fa-2 {
+bottom: 50%;
+}
+
+.weather-info {
+  font-size: 1em;
+  color: #333;
+}
+.weather-info h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.weather-info p {
+  margin-bottom: 5px;
+}
+
+.weather-description {
+  font-weight: bold;
+  color: blue;
 }
