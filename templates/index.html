@@ -11,43 +11,40 @@
   <header>
     <h1>Your Weather Web Application</h1>
     <p>See the weather in your place with just one click!</p>
-    <img src="static/images/200000203-photos-of-sky-during-different-weather-collage.jpg" class="weather img-responsive" alt="Weather collage">
+    <!--<img src="static/images/200000203-photos-of-sky-during-different-weather-collage.jpg" class="weather img-responsive" alt="Weather collage">-->
   </header>
 
-  <div class="container" id="citiesContainer">
-    <div class="my-container-1">
- <div class ="class-fa">
-        <div class ="on-left">
-      <button id="getLocationBtn" style="display: none;">See the weather where I am</button>
-      <p id="locationOutput"></p>
-      <div id="weatherInfo" class="weather-info"></div>
-      <button id="clearBtn" style ="display: none;">Clear</button>
+  
+  <div class="my-container-1">
+        <div class="on-left" style="margin-left: 5%;">
+
+            <p id="locationOutput" ></p>
+          
+            <button id="clearBtn" style="display: none;">Clear</button>
         </div>
-        <div class ="on-right">
-            <div class ="date-time">
-                <div class ="day-date" style ="margin-left : 50%; ">
-                    <p id ="date"></p>
+        
+            <div class="flex-content" style="display: block; margin-left:20%; font-weight: bold;">
+                <div class="day-date" >
+                    <p id="date"></p>
                 </div>
-                <div class="current-time"  style ="margin-right : 35%";>
+                <div class="current-time">
                     <p id="time"></p>
                 </div>
-            </div>
+              </div>    
+  </div>
 
-        </div>
-    </div>
-</div>
 
-  <div class="class-fa-2">
+
+
+
     <div class="my-container-2">
       <form id="weatherForm" onsubmit="return false;">
         <input type="text" id="cityInput" placeholder="Enter city name">
         <button type="submit" id="getWeatherBtn">Get Weather</button>
       </form>
-    </div>
-
-     <div id="weatherInfo"></div>
+     <div id="weatherInfo" class="weather-info-2"></div>
    </div>
-  </div>
+  
 
   <div class="container-card" id="citiesContainer">
     <div class="city-card" id="tunisiaCard">

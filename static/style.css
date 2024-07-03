@@ -1,16 +1,22 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Georgia', serif;
   margin: 0;
   padding: 0;
-  background-color: #f0f0f0;
+  background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
+  background-color:black;
+
 }
 
 header {
+  height: 150px !important;
   text-align: center;
   padding: 20px;
   background: linear-gradient(120deg, #2980b9, #6dd5fa, #ffffff);
-  color: white;
+  color: rgb(0, 0, 0);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-image: url('/static/images/200000203-photos-of-sky-during-different-weather-collage.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header h1 {
@@ -24,8 +30,8 @@ header p {
 }
 
 header img {
-  max-width: 100%;
-  height: auto;
+  max-width: 50%;
+  height: 20%;
   margin-top: 10px;
   border-radius: 5px;
 }
@@ -35,10 +41,7 @@ header img {
   padding: 20px;
 }
 
-.my-container-1,
-.my-container-2 {
-  margin-bottom: 20px;
-}
+
 
 button {
   background-color: #007bff;
@@ -61,6 +64,7 @@ input[type="text"] {
   border-radius: 5px;
   margin-right: 10px;
   font-size: 16px;
+  margin-top: 20px;
 }
 
 .container-card {
@@ -68,6 +72,7 @@ input[type="text"] {
   justify-content: space-around;
   padding: 20px;
   flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .city-card {
@@ -118,16 +123,6 @@ footer a i {
   font-size: 24px;
 }
 
-.on-left {
-  float: left; /* Aligns to the left */
-  width: 50%; /* Adjust as needed */
-}
-
-.on-right {
-  float: right; /* Aligns to the right */
-  width: 50%; /* Adjust as needed */
-}
-
 .date-time {
   text-align: left; /* Aligns day and date to the left */
 }
@@ -151,19 +146,65 @@ footer a i {
 bottom: 50%;
 }
 
-.weather-info {
-  font-size: 1em;
-  color: #333;
-}
-.weather-info h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-}
-.weather-info p {
-  margin-bottom: 5px;
+
+.my-container-1 {
+  margin-top: 50px;
+  display: flex;
+  margin-left: 10%;
+  background-color: #e0e0e0d7;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  height: auto;
 }
 
-.weather-description {
-  font-weight: bold;
-  color: blue;
+
+.my-container-2 {
+align-items: center;
+justify-content: center;
+margin-left: 10%;
+border-width: 5px;
+border-radius: 8px;
+width: 75%;
+height: auto;
+background-image: url('/static/images/image copy.png') !important;
+background-size: cover;
+background-repeat: no-repeat;
+
 }
+
+.on-right {
+  float: right; /* Aligns to the right */
+  width: 50%; /* Adjust as needed */
+}
+
+.weather-info-2 {
+  font-family: 'Georgia', serif; /* Alternate old-fashioned serif font */
+  font-size: 16px; /* Smaller font size for paragraphs */
+  color: #030303; /* Darker text color */
+  line-height: 1.8; /* Increased line height for readability */
+  padding: 10px; /* Padding around paragraphs */
+  text-align: center;
+  font-weight: bold;
+}
+
+#weatherForm {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 20%;
+  font-weight: bold;
+}
+
+#locationOutput
+{
+  font-weight: bold;
+  font-family: 'Georgia', serif; /* Alternate old-fashioned serif font */
+  font-size: 16px; /* Smaller font size for paragraphs */
+  color: #000000; /* Darker text color */
+  line-height: 1.8; /* Increased line height for readability */
+  
+  padding: 10px; /* Padding around paragraphs */
+}
+
+
