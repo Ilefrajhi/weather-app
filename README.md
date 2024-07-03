@@ -24,7 +24,7 @@ python3 app.py
 
 Web browsers provide a geolocation API that allows web apps to access the user's location data, which i actually used to determine the user's loacation.
 
-## U need to enable the browser location API first 
+## U need to enable the browser's location API first 
 ![alt text](image-4.png)
 
 # See the weather where you are with me !
